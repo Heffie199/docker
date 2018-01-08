@@ -1,0 +1,6 @@
+redis:
+  container_name: test-redis-4.0
+  build: docker
+  restart: always
+  ports:
+    - "6379:6379"

@@ -1,0 +1,6 @@
+tomcat:
+  container_name: test-tomcat-8.5
+  build: docker
+  restart: always
+  ports:
+    - "8085:8080"

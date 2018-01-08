@@ -1,0 +1,7 @@
+nginx:
+  container_name: test-nginx-1.8
+  build: docker
+  restart: always
+  ports:
+    - "80:80"
+    - "443:443"
