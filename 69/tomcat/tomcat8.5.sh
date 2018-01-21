@@ -2,7 +2,7 @@
 # !/bin/sh
 set -m
 SCRIPT_URL="sh"
-DOCKER-ID="5a43cb2e530a"
+DOCKER-ID="bf2d204464dc"
 WAR_PATH="/root/source/26"
 function start_app() {
     compile_app
