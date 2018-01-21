@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # !/bin/sh
 set -m
-SCRIPT_URL="/root/sh"
+SCRIPT_URL="sh"
 DOCKER-ID="5a43cb2e530a"
 WAR_PATH="/root/source/26"
 function start_app() {
