@@ -2,12 +2,12 @@
 # !/bin/sh
 set -m
 SCRIPT_URL="sh"
-DOCKER_ID="bf2d204464dc"
+DOCKER_NAME="tomcat-8.5"
 WAR_PATH="/root/source/26"
 function start_app() {
     compile_app
-    docker cp ${WAR_PATH}/*.war ${DOCKER_ID}:/usr/local/tomcat/webapps &
-    docker restart ${DOCKER_ID}
+    docker cp ${WAR_PATH}/*.war ${DOCKER_NAME}:/usr/local/tomcat/webapps &
+    docker restart ${DOCKER_NAME}
 }
 function compile_app(){
    ${SCRIPT_URL}/git-taoke.sh ant
