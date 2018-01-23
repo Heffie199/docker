@@ -2,7 +2,7 @@
 # !/bin/sh
 set -m
 SCRIPT_URL="sh"
-DOCKER_NAME="tomcat-8.5"
+DOCKER_NAME="tomcat-7"
 WAR_PATH="/root/source/26"
 function start_app() {
     compile_app
