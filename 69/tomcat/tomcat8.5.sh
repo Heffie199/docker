@@ -6,7 +6,7 @@ DOCKER_NAME="tomcat-8.5"
 WAR_PATH="/root/source/26"
 function start_app() {
     compile_app
-#    docker cp ${WAR_PATH}/taoke.war ${DOCKER_NAME}:/usr/local/tomcat/webapps &
+    docker cp ${WAR_PATH}/taoke.war ${DOCKER_NAME}:/usr/local/tomcat/webapps &
     docker cp ${WAR_PATH}/weixinOauth.war ${DOCKER_NAME}:/usr/local/tomcat/webapps &
     docker restart ${DOCKER_NAME}
 }
