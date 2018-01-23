@@ -3,4 +3,4 @@ tomcat:
   build: docker
   restart: always
   ports:
-    - "8085:8080"
+    - "8086:8080"
