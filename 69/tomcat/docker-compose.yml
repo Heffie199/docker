@@ -1,5 +1,5 @@
 tomcat:
-  container_name: tomcat-7
+  container_name: tomcat-8.5
   build: docker
   restart: always
   ports:
