@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # !/bin/sh
 OUT_WORK="/root/source/26"
 WORK_NAME="taoke"
