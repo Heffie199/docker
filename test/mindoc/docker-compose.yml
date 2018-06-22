@@ -1,0 +1,23 @@
+mysql:
+  container_name: mindoc_mysql
+  image: mysql:5.6.23
+  ports:
+    - "3307:3306"
+  environment:
+       TZ : "Asia/Shanghai"
+       MYSQL_ROOT_PASSWORD: 123456
+       MYSQL_DATABASE: mindoc_db
+  command: --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+
+mindoc:
+  container_name: mindoc
+  image: harryhan1989/mindoc
+  ports:
+    - "8181:8181"
+  environment:
+      MYSQL_PORT_3306_TCP_ADDR: 192.168.43.251
+      MYSQL_PORT_3306_TCP_PORT: 3307
+      MYSQL_INSTANCE_NAME: mindoc_db
+      MYSQL_USERNAME: root
+      MYSQL_PASSWORD: 123456
+      HTTP_PORT: 8181
